@@ -21,8 +21,9 @@ const { title, description, keywords, image } = Astro.props
       keywords={keywords}
       image={image}
     />
+    <meta name="color-scheme" content="dark" />
   </head>
-  <body class="antialiased">
+  <body class="bg-neutral-950 text-neutral-300 antialiased">
     <slot />
   </body>
 </html>
