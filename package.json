@@ -43,6 +43,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@biomejs/biome": "1.9.4",
+    "esbuild": ">=0.25.0",
     "lefthook": "1.10.11",
     "prettier": "3.5.2",
     "prettier-plugin-astro": "0.14.1",
