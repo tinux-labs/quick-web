@@ -1,0 +1,11 @@
+{
+  "title": "Quick Web | Tinogasta Labs",
+  "description": "A minimal, fast-loading template for building simple websites and landing pages. Perfect for showcasing information with a clean, lightweight design.",
+  "image": "/og.png",
+  "meta": {
+    "keywords": ["astro", "tailwind", "typescript"]
+  },
+  "author": {
+    "twitter": "@tinogasta-labs"
+  }
+}

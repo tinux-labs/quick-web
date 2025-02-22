@@ -1,14 +1,26 @@
 ---
+import BaseHead from '~/components/shared/BaseHead.astro'
 import '~/styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+  keywords?: string[]
+  image?: string
+}
+
+const { title, description, keywords, image } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Astro Basics</title>
+    <BaseHead
+      title={title}
+      description={description}
+      keywords={keywords}
+      image={image}
+    />
   </head>
   <body class="antialiased">
     <slot />

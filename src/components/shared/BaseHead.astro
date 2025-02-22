@@ -1,0 +1,44 @@
+---
+import { ClientRouter } from 'astro:transitions'
+import config from '~/site-config.json'
+
+type Props = {
+  title?: string
+  description?: string
+  keywords?: string[]
+  image?: string
+}
+
+const { title, description, image, keywords } = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const siteTitle = title ? title : config.title
+const siteDescription = description ? description : config.description
+const siteKeywords = keywords ? keywords : config.meta.keywords
+const ogImage = new URL(image ? image : config.image, Astro.url).href
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<title>{siteTitle}</title>
+<meta name="description" content={siteDescription} />
+<meta name="keywords" content={siteKeywords.join(',')} />
+
+<!-- Open Graph -->
+<meta name="og:url" content={Astro.url.href} />
+<meta name="og:title" content={siteTitle} />
+<meta name="og:description" content={siteDescription} />
+<meta property="og:image" content={ogImage} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content={config.author.twitter} />
+<meta name="twitter:title" content={siteTitle} />
+<meta name="twitter:description" content={siteDescription} />
+<meta property="twitter:image" content={ogImage} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<ClientRouter />
