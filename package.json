@@ -10,7 +10,9 @@
     "format": "prettier . --list-different",
     "format:write": "prettier . --write",
     "lint": "biome lint .",
-    "lint:write": "biome lint . --write"
+    "lint:write": "biome lint . --write",
+    "check": "astro check",
+    "prepare": "lefthook install"
   },
   "dependencies": {
     "astro": "5.3.0"
@@ -32,12 +34,16 @@
     "onlyBuiltDependencies": [
       "@biomejs/biome",
       "esbuild",
+      "lefthook",
       "sharp"
     ]
   },
   "devDependencies": {
+    "@astrojs/check": "0.9.4",
     "@biomejs/biome": "1.9.4",
+    "lefthook": "1.10.11",
     "prettier": "3.5.2",
-    "prettier-plugin-astro": "0.14.1"
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "5.7.3"
   }
 }
