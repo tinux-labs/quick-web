@@ -1,0 +1,6 @@
+node_modules
+.env
+pnpm-lock.yaml
+build
+dist
+public/build
