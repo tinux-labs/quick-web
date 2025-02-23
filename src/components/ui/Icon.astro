@@ -1,0 +1,16 @@
+---
+import type { IconName } from '@/icon-name'
+
+interface Props {
+  name: IconName
+  class?: string
+  title?: string
+}
+
+const { name, class: className, title = name } = Astro.props
+---
+
+<svg class={className}>
+  <title>{title}</title>
+  <use href={`./icons/sprite.svg#${name}`}></use>
+</svg>

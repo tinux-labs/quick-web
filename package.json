@@ -49,6 +49,7 @@
     "prettier": "3.5.2",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.11",
-    "typescript": "5.7.3"
+    "typescript": "5.7.3",
+    "vite-plugin-icons-spritesheet": "3.0.1"
   }
 }

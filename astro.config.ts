@@ -1,9 +1,8 @@
+import sitemap from '@astrojs/sitemap'
+import tailwindcss from '@tailwindcss/vite'
 // @ts-check
 import { defineConfig } from 'astro/config'
-
-import tailwindcss from '@tailwindcss/vite'
-
-import sitemap from '@astrojs/sitemap'
+import { iconsSpritesheet } from 'vite-plugin-icons-spritesheet'
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,7 +14,18 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+      iconsSpritesheet({
+        withTypes: true,
+        typesOutputFile: 'src/components/ui/icons/icon-name.d.ts',
+        inputDir: 'resources/icons',
+        outputDir: 'public/icons',
+        fileName: 'sprite.svg',
+        formatter: 'prettier',
+        iconNameTransformer: name => name.toLowerCase(),
+      }),
+    ],
     build: {
       cssMinify: true,
     },

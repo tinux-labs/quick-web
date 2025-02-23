@@ -5,7 +5,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@/icon-name": [
+        "./src/components/ui/icons/icon-name.d.ts",
+        "./src/types/icon-name.d.ts"
+      ]
     }
   }
 }
