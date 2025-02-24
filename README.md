@@ -14,6 +14,9 @@ Perfect for showcasing information with a clean, lightweight design.
 - [x] Highly customizable to fit your needs
 - [x] Sitemap included for automatic indexing
 - [x] Optimized SVG icons for better performance
+- [x] Prettier for consistent code formatting
+- [x] Biome for linting and code quality
+- [x] Lefthook for managing Git hooks efficiently
 - [x] Production-ready with optimized performance and deployment
 
 ## Dev
