@@ -10,7 +10,8 @@ Perfect for showcasing information with a clean, lightweight design.
 - [x] Tailwind CSS v4 for a utility-first styling approach
 - [x] Smooth page transitions for a better user experience
 - [x] SEO-friendly with best practices for search visibility
-- [x] Strict CSP headers configured for enhanced security against XSS attacks and other vulnerabilities
+- [x] Strict CSP headers configured for enhanced security against XSS attacks
+      and other vulnerabilities
 - [x] Highly customizable to fit your needs
 - [x] Sitemap included for automatic indexing
 - [x] Optimized SVG icons for better performance
@@ -25,12 +26,14 @@ Perfect for showcasing information with a clean, lightweight design.
 git clone git@github.com:tinogasta-labs/quick-web.git my-awesome-web
 cd my-awesome-web
 pnpm install
+pnpm run setup
 pnpm dev
 ```
 
 ## Icons
 
-This template uses SVG sprites for optimal icon performance, powered by [vite-plugin-icons-spritesheet](https://github.com/forge-42/vite-plugin-icons-spritesheet/tree/main).
+This template uses SVG sprites for optimal icon performance, powered by
+[vite-plugin-icons-spritesheet](https://github.com/forge-42/vite-plugin-icons-spritesheet/tree/main).
 
 #### Icons Structure
 
@@ -56,11 +59,12 @@ The SVG files will be automatically added to `./resources/icons/`.
 
 ### Using Icons in Components
 
-Icons are automatically compiled into a sprite and TypeScript types are generated. Use them in your components like this:
+Icons are automatically compiled into a sprite and TypeScript types are
+generated. Use them in your components like this:
 
 ```astro
 ---
-import Icon from '~/components/ui/Icon';
+import Icon from '~/components/ui/Icon'
 ---
 
 <Icon name="avatar" class="size-5" />

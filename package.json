@@ -12,7 +12,8 @@
     "lint": "biome lint .",
     "lint:write": "biome lint . --write",
     "check": "astro check",
-    "prepare": "lefthook install"
+    "prepare": "lefthook install",
+    "setup": "node --experimental-strip-types --no-warnings scripts/setup.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
