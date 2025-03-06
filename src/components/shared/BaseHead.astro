@@ -44,4 +44,8 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap-index.xml" />
 
+<!-- disable google translation -->
+<meta name="google" content="notranslate" />
+
+<!-- enable transitions -->
 <ClientRouter />
