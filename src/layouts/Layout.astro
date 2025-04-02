@@ -27,3 +27,15 @@ const { title, description, keywords, image } = Astro.props
     <slot />
   </body>
 </html>
+
+<script>
+  // dynamically remove superfluous preloads
+  import type { TransitionBeforeSwapEvent } from 'astro:transitions/client'
+  document.addEventListener('astro:before-swap', e =>
+    [
+      ...(e as TransitionBeforeSwapEvent).newDocument.head.querySelectorAll(
+        'link[as="font"]',
+      ),
+    ].forEach(link => link.remove()),
+  )
+</script>

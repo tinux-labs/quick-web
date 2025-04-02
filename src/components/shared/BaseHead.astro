@@ -26,13 +26,13 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <meta name="keywords" content={siteKeywords.join(',')} />
 
 <!-- Preload -->
-<!-- <link
+<link
   rel="preload"
   href="/fonts/ibm-plex-sans-variable.woff2"
   as="font"
   type="font/woff2"
   crossorigin
-/> -->
+/>
 
 <!-- Open Graph -->
 <meta property="og:url" content={Astro.url.href} />
