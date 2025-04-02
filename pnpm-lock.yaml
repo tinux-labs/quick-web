@@ -20,6 +20,9 @@ importers:
       astro-compress:
         specifier: ^2.3.7
         version: 2.3.7(@types/node@22.13.14)(jiti@2.4.2)(rollup@4.34.8)(typescript@5.8.2)(yaml@2.7.0)
+      astro-compressor:
+        specifier: ^1.0.0
+        version: 1.0.0
       tailwindcss:
         specifier: ^4.1.1
         version: 4.1.1
@@ -811,6 +814,9 @@ packages:
 
   astro-compress@2.3.7:
     resolution: {integrity: sha512-VbMhIXqKI+zgq/oyEzT4epLKJj2YqdhcNgugqlmeQwvqsrlIxjqfPbNO7DqgKP74HRMRm0sBEM0COMRqnzUPFA==}
+
+  astro-compressor@1.0.0:
+    resolution: {integrity: sha512-MNGRmjIsb73BIJivbU/HnTbPu5CEFvXp1NCev0bpsuK/cp4cCPX6C1omUPXzw2oQbtKv0phTTTtEk+h20SrF1Q==}
 
   astro@5.5.6:
     resolution: {integrity: sha512-SjU6zAlRe/gQrZ558Qhm211Yl8XOZBfjMpZig3XtQpG6zlyHJkElbWQIWXAVPzMg17cFVdv/qZPVHfcP2YOGGw==}
@@ -3125,6 +3131,8 @@ snapshots:
       - typescript
       - uploadthing
       - yaml
+
+  astro-compressor@1.0.0: {}
 
   astro@5.5.6(@types/node@22.13.14)(jiti@2.4.2)(lightningcss@1.29.3)(rollup@4.34.8)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.0):
     dependencies:
