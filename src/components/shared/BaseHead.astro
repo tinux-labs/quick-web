@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions'
 import config from '~/site-config.json'
+import '~/styles/fonts.css'
 
 type Props = {
   title?: string
@@ -28,7 +29,7 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <!-- Preload -->
 <link
   rel="preload"
-  href="/fonts/ibm-plex-sans-variable.woff2"
+  href="/assets/fonts/ibm-plex-sans-variable.woff2"
   as="font"
   type="font/woff2"
   crossorigin
