@@ -22,7 +22,7 @@ export default defineConfig({
         withTypes: true,
         typesOutputFile: 'src/components/ui/icons/icon-name.d.ts',
         inputDir: 'resources/icons',
-        outputDir: 'public/icons',
+        outputDir: 'public/assets/icons',
         fileName: 'sprite.svg',
         formatter: 'prettier',
         iconNameTransformer: name => name.toLowerCase(),
