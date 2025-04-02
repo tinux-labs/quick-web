@@ -1,5 +1,13 @@
+@import './fonts.css';
 @import 'tailwindcss';
 
 @theme {
   --color-black: #111;
+
+  --font-display:
+    'IBM Plex Sans Variable', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply font-display;
 }

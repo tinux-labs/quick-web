@@ -25,10 +25,19 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <meta name="description" content={siteDescription} />
 <meta name="keywords" content={siteKeywords.join(',')} />
 
+<!-- Preload -->
+<link
+  rel="preload"
+  href="/font/ibm-plex-sans-variable.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+
 <!-- Open Graph -->
-<meta name="og:url" content={Astro.url.href} />
-<meta name="og:title" content={siteTitle} />
-<meta name="og:description" content={siteDescription} />
+<meta property="og:url" content={Astro.url.href} />
+<meta property="og:title" content={siteTitle} />
+<meta property="og:description" content={siteDescription} />
 <meta property="og:image" content={ogImage} />
 
 <!-- Twitter Card -->
@@ -36,7 +45,7 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <meta name="twitter:creator" content={config.author.twitter} />
 <meta name="twitter:title" content={siteTitle} />
 <meta name="twitter:description" content={siteDescription} />
-<meta property="twitter:image" content={ogImage} />
+<meta name="twitter:image" content={ogImage} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -48,4 +57,4 @@ const ogImage = new URL(image ? image : config.image, Astro.url).href
 <meta name="google" content="notranslate" />
 
 <!-- enable transitions -->
-<ClientRouter />
+<ClientRouter fallback="none" />
