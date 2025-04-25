@@ -16,9 +16,9 @@
     "setup": "node --experimental-strip-types --no-warnings scripts/setup.ts"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.3.0",
+    "@astrojs/sitemap": "^3.3.1",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "5.7.2",
+    "astro": "5.7.5",
     "astro-compress": "^2.3.8",
     "astro-compressor": "^1.0.0",
     "tailwindcss": "^4.1.4"
@@ -27,7 +27,7 @@
     "node": "22",
     "pnpm": ">=10.8.0"
   },
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.9.0",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
@@ -47,8 +47,8 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@biomejs/biome": "1.9.4",
-    "esbuild": ">=0.25.2",
-    "lefthook": "1.11.10",
+    "esbuild": ">=0.25.3",
+    "lefthook": "1.11.11",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.11",
